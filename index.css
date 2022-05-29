@@ -5,7 +5,8 @@
 }
 
 #outer-container{
-    background-image: url("./images/music2.jpg");
+    background-image: url("./images/music.jpg");
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
@@ -33,12 +34,13 @@
 #inner-container{
     width: 50vw;
     height: 40vh;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.5);
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
     align-items: center;
     padding: 5px;
+    backdrop-filter: blur(2px);
 }
 .innermost-white{
     width: 40px;
@@ -46,6 +48,11 @@
     background-color: white;
     margin: 2px;
     padding-top: 32px;
+    transition: background-color 1.2s;
+}
+.innermost-white:hover{
+    background-color: grey;
+    box-shadow: 0px 0px 5px 5px;
 }
 .innermost-black{
     width: 40px;
@@ -54,8 +61,12 @@
     margin: 2px;
     color: white;
     padding-top: 32px;
+    transition: background-color 1.2s;
 }
-
+.innermost-black:hover{
+    background-color: green;
+    box-shadow: 0px 0px 5px 5px;   
+}
 
 /* For Responsiveness */
 @media screen and (min-width: 358px) and (max-width: 440px){
@@ -81,6 +92,8 @@
         padding-top: 22px;
     }
     #outer-container{
+        background-image: url("./images/music2.jpg");
+        background-position: center;
         background-size: auto;
     }
 }
