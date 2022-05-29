@@ -4,8 +4,6 @@
     box-sizing: border-box;
 }
 
-
-
 #outer-container{
     background-image: url("./images/music2.jpg");
     background-repeat: no-repeat;
@@ -56,4 +54,33 @@
     margin: 2px;
     color: white;
     padding-top: 32px;
+}
+
+
+/* For Responsiveness */
+@media screen and (min-width: 359px) and (max-width: 440px){
+    #inner-container{
+        width: 50vw;
+        height: 25vh;
+        padding: 5px;
+    }
+    #heading{
+        font-size: 1rem;
+        margin: 8px;
+    }
+    #copyright{
+        font-size: 0.8rem;
+        margin: 8px;
+    }
+    .innermost-white{
+        height: 60px;        
+        padding-top: 22px;
+    }
+    .innermost-black{
+        height: 60px;
+        padding-top: 22px;
+    }
+    #outer-container{
+        background-size: auto;
+    }
 }
