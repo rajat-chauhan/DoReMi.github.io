@@ -60,7 +60,7 @@
 /* For Responsiveness */
 @media screen and (min-width: 359px) and (max-width: 440px){
     #inner-container{
-        width: 50vw;
+        width: 70vw;
         height: 25vh;
         padding: 5px;
     }
