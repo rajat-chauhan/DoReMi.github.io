@@ -68,6 +68,10 @@
     box-shadow: 0px 0px 5px 5px;   
 }
 
+.activated{
+    box-shadow: 4px 4px 4px 2px green, -4px -4px 4px 2px green;
+}
+
 /* For Responsiveness */
 @media screen and (min-width: 358px) and (max-width: 440px){
     #inner-container{
