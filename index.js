@@ -10,7 +10,7 @@ mykeys.forEach(value => {
 function playSound(key) {
     switch (key) {
         case 'C':
-            var audio = new Audio('doremi/kgf2.mp3');
+            var audio = new Audio('doremi/do.mp3');
             audio.play();
             break;
         case 'D':
